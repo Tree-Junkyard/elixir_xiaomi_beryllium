@@ -383,6 +383,15 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.1 \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor
+
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
