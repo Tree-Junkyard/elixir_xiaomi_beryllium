@@ -1,19 +1,25 @@
 #
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) The Project Elixir
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Project Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Elixir Officials
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+ELIXIR_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := POCO F1
+PRODUCT_MODEL := Pocophone F1
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := beryllium
